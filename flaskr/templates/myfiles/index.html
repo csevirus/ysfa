@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1 class="text-center mt-5 display-4">
+  {% block title %}Files{% endblock %}
+</h1>
+<div class="d-flex justify-content-center">
+  {% if g.user %}
+    <a class="action btn btn-info mr-4" href="{{ url_for('myfiles.create') }}">New</a>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <ul class="list-group">
+    {% for post in posts %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-10">
+          <h3>{{ post['title'] }}</h3>
+        </div>
+        <div class="col-md-2 mx-auto">
+          {% if g.user['id'] == post['author_id'] %}
+            <a class="action btn btn-info" href="{{ url_for('myfiles.delete', id=post['id']) }}">Delete</a>
+          {% endif %}
+          <a class="action btn btn-success" href="{{ url_for('myfiles.download', id=post['id']) }}">Download</a>
+        </div>
+      </div>
+    </li>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

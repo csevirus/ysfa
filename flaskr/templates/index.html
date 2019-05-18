@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Developed by- Divyansh Gupta and Nishant Garg---------->
+	<title>sports</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0" >
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	<link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main" id="main">
+
+		<div class="navbar" id="navbar">
+			<div class="title">
+               <h1>YSFI</h1>
+			</div>
+			<div class="menu_items">
+			  <a href="#main">Home</a>
+			  <a href="#about-us">About</a>
+			  <a href="#vision">Vision</a>
+			  <a href="#gallery_">Gallery</a>
+			  <a href="#footer_contact">Contact Us</a>
+		    </div>
+		</div>
+		<div class="logo">
+		   <img src="{{url_for ('static' , filename='logo.jpg') }}">
+	    </div>
+  <h1 class="main_h1">YUVA SPORTS FEDERATION OF INDIA</h1>
+
+</div>
+
+<!--  ABOUT US -->
+<div id="about-us" class="aboutus">
+   <div  class="about1">
+     <h1 >--ABOUT YSFI--</h1>
+     <p><strong>YSFI</strong> was built to eradicate the unethical practices and to promote the sports culture amongs youth. Conducting championships at block , district , state , national and international level which helps the youth to connect with the sports world . This will help in boosting the morale of the youth to participate in various international level competitions such as common wealth, Olympics and Asiad and win medals for the country.</p>
+     <p><strong><i>Games we conduct:</i></strong></p>
+     <p>Kabaddi, circular Kabaddi, Yoga, Athletic, Boxing, Badminton, Hockey, Volleyball, Handball, Football, Cricket, Basketball, Kho-kho, Karate, rugby, taekwondo, tug of war, weight lifting, cycling, archery, cross country race, drop ro-boll, kick boxing, net ball, power lifting, jump rope, wushu, table tennis, shooting, air rifle, pistil, wrestling etc.</p>
+   </div>
+
+   <div class="about2">
+       <img src="{{url_for ('static' , filename='images (32)_1.jpeg') }}">
+   </div>
+</div>
+
+<!--vision-->
+<div id="vision" class="vision">
+	 <div class="about4">
+       <img src="{{url_for ('static' , filename='IMG20190515110313.jpg') }}">
+     </div>
+   <div  class="about3">
+     <h1>--Vision--</h1>
+     <ul type="disc">
+	<li><p>-> Along with conducting games we also Spreads social awareness about the bad practices.</p></li>
+	<li><p>-> We also conducts blood camps at regular interval</p></li>
+	<li><p>-> We also conducts physical fitness camps at regular intervals</p></li>
+	<li><p>-> We also spread awareness about the increasing pollution</p></li>
+</ul>
+   </div>
+
+
+</div>
+<!--gallery-->
+<div id="gallery_"  class="gallery_front">
+   <h1  style="color:black; text-align: center; font-size: 300%; margin-top: 100px;">--GALLERY--</h1>
+
+    <div class="gallery_front_row">
+      <div class="gallery_front_column">
+        <div class="gall"><img src="{{url_for ('static' , filename='images (25).jpeg') }}"></div>
+        <div class="gall"><img src="{{url_for ('static' , filename='images (24).jpeg') }}"></div>
+      </div>
+
+      <div class="gallery_front_column">
+        <div class="gall"><img src="{{url_for ('static' , filename='images (21).jpeg') }}"></div>
+        <div class="gall"><img src="{{url_for ('static' , filename='images (32).jpeg') }}"></div>
+        <!-- <img src=".jpg"> -->
+      </div>
+
+      <div class="gallery_front_column">
+        <div class="gall"><img src="{{url_for ('static' , filename='images (31).jpeg') }}"></div>
+        <div class="gall"><img src="{{url_for ('static' , filename='images (30).jpeg') }}"></div>
+      </div>
+
+      <div class="gallery_front_column">
+        <div class="gall"><img src="{{url_for ('static' , filename='images (29).jpeg') }}"></div>
+        <div class="gall"><img src="{{url_for ('static' , filename='images (28).jpeg') }}"></div>
+        <!-- <img src=".jpg"> -->
+      </div>
+    </div>
+ </div>
+
+<footer>
+	<h1>YUVA SPORTS FEDERATION OF INDIA</h1>
+	<div class="footer" id="footer_contact">
+		<div class="footer_contact">
+			<h2>Contact Us</h2>
+			<i class="fa fa-phone" style="font-size:30px;color:red"></i>
+			<h3>Sachin Dangi<br>7056220822<br><br>Or Just Mail Us AT:<br>yuvasportsfederationofindia@gmail.com</h3>
+		</div>
+		<div class="footer_address">
+			<h2>Meet Us At:</h2>
+			<i class="fa fa-map-marker" style="font-size:32px;color:red"></i>
+			<h3>VPO Madina<br>Dist. Rohtak</h3>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
